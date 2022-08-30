@@ -21,6 +21,7 @@ private void run()
 	bestSum( 8, List.of( 2, 3, 5 ) );
 	bestSum( 8, List.of( 1, 4, 5 ) );
 	bestSum( 100, List.of( 1, 2, 5, 25 ) );
+<<<<<<< HEAD
 	
 	/* m = target sum
 	 * n = aParts.size()
@@ -33,6 +34,8 @@ private void run()
 	 * time : O(m^2 * n)
 	 * space: O(m^2)
 	 */
+=======
+>>>>>>> main
 
 }
 private void log( Object aThing )
@@ -81,7 +84,11 @@ private List<Integer> bestSum( int aTarget, List<Integer> aParts, Map<Integer, L
 		}
 	}
 	aMemo.put( aTarget, bestSum );
+<<<<<<< HEAD
 	return bestSum;
+=======
+	return aMemo.get( aTarget );
+>>>>>>> main
 }
 
 }
