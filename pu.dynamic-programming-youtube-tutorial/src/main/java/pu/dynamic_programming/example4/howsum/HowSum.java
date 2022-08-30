@@ -1,4 +1,4 @@
-package pu.dynamic_programming.example4;
+package pu.dynamic_programming.example4.howsum;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package pu.dynamic_programming.example3;
+package pu.dynamic_programming.example3.cansum;
 
 import java.util.HashMap;
 import java.util.List;

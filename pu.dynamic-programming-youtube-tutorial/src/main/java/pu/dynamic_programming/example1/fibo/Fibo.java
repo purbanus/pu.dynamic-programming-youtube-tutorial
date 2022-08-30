@@ -1,4 +1,4 @@
-package pu.dynamic_programming.example1;
+package pu.dynamic_programming.example1.fibo;
 
 import java.util.HashMap;
 import java.util.Map;

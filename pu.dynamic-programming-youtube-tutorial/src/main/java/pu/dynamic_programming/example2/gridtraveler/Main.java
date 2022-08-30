@@ -1,4 +1,4 @@
-package pu.dynamic_programming.example2;
+package pu.dynamic_programming.example2.gridtraveler;
 
 import java.util.HashMap;
 import java.util.Map;
