@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class Main
+public class GridTraveler
 {
 public static class RowColumn
 {
@@ -47,7 +47,7 @@ private Map<RowColumn, Long> memo = new HashMap<>();
 
 public static void main( String [] args )
 {
-	new Main().run();
+	new GridTraveler().run();
 }
 public void run()
 {
