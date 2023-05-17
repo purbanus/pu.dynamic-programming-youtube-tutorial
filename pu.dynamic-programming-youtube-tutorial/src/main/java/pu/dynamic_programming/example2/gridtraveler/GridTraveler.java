@@ -67,7 +67,7 @@ private void log( long aNumber )
 }
 public long gridTraveler( RowColumn aRowColumn )
 {
-	if ( memo.get( aRowColumn ) != null )
+	if ( memo.containsKey( aRowColumn ) )
 	{
 		return memo.get( aRowColumn );
 	}
@@ -85,10 +85,14 @@ public long gridTraveler( RowColumn aRowColumn )
 }
 
 /*
- * 3
+1
+3
+3
+6
 20
 252
 2333606220
-
+858110510779117752
+2499
  */
 }

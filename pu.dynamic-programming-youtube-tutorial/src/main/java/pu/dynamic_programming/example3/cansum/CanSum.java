@@ -32,7 +32,7 @@ private boolean canSum( int aTarget, List<Integer> aParts )
 }
 private boolean canSum( int aTarget, List<Integer> aParts, Map<Integer, Boolean> aMemo )
 {
-	if ( aMemo.get( aTarget ) != null )
+	if ( aMemo.containsKey( aTarget ) )
 	{
 		return aMemo.get( aTarget );
 	}
@@ -58,5 +58,13 @@ private boolean canSum( int aTarget, List<Integer> aParts, Map<Integer, Boolean>
 	aMemo.put( aTarget, false );
 	return false;
 }
-
+/*
+true
+true
+false
+true
+false
+false
+true
+ */
 }
