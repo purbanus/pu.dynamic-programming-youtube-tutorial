@@ -40,10 +40,7 @@ private void howSum( int aTarget, List<Integer> aParts )
 {
 	List<Integer> deSums = new ArrayList<>();
 	boolean canSum = howSum( aTarget, aParts, new HashMap<Integer, Boolean>(), deSums );
-	if ( deSums != null )
-	{
-		Collections.reverse( deSums );
-	}
+	Collections.reverse( deSums );
 	log( "Making " + aTarget + " from " + aParts + (canSum ? " can be done by " + deSums : " cannot be done" ) );
 }
 private boolean howSum( int aTarget, List<Integer> aParts, Map<Integer, Boolean> aMemo, List<Integer> aDeSums )
