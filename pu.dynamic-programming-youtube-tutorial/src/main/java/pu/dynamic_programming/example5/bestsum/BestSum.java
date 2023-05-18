@@ -84,4 +84,10 @@ private List<Integer> bestSum( int aTarget, List<Integer> aParts, Map<Integer, L
 	return bestSum;
 }
 
+/*
+Making 7 from [5, 3, 4, 7] can be done by [7]
+Making 8 from [2, 3, 5] can be done by [3, 5]
+Making 8 from [1, 4, 5] can be done by [4, 4]
+Making 100 from [1, 2, 5, 25] can be done by [25, 25, 25, 25]
+ */
 }

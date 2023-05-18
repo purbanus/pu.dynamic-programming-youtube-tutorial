@@ -36,7 +36,7 @@ private void log( long aNumber )
 }
 private long fiboOfIndex( int aIndex )
 {
-	if ( memo.get( aIndex ) != null )
+	if ( memo.containsKey( aIndex ) )
 	{
 		return memo.get( aIndex );
 	}
