@@ -1,11 +1,12 @@
 package pu.dynamic_programming.example1.fibo;
 
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Fibo
 {
-private Map<Integer, Long> memo = new HashMap<>();
+private Map<Integer, BigInteger> memo = new HashMap<>();
 
 public static void main( String [] args )
 {
@@ -20,7 +21,7 @@ private void run()
 	log( fiboOfIndex( 8 ) );
 	log( fiboOfIndex( 13 ) );
 	log( fiboOfIndex( 21 ) );
-	log( fiboOfIndex( 100 ) );
+	log( fiboOfIndex( 1000 ) );
 
 	log( fiboOfIndexStraight( 1 ) );
 	log( fiboOfIndexStraight( 2 ) );
@@ -34,7 +35,11 @@ private void log( long aNumber )
 {
 	System.out.println( aNumber );
 }
-private long fiboOfIndex( int aIndex )
+private void log( BigInteger aNumber )
+{
+	System.out.println( aNumber );
+}
+private BigInteger fiboOfIndex( int aIndex )
 {
 	if ( memo.containsKey( aIndex ) )
 	{
@@ -42,9 +47,9 @@ private long fiboOfIndex( int aIndex )
 	}
 	if ( aIndex == 1 || aIndex == 2 )
 	{
-		return 1;
+		return BigInteger.valueOf( 1 );
 	}
-	long result = fiboOfIndex( aIndex - 1 ) + fiboOfIndex( aIndex - 2 );
+	BigInteger result = fiboOfIndex( aIndex - 1 ).add( fiboOfIndex( aIndex - 2 ) );
 	memo.put( aIndex, result );
 	return result;
 }
